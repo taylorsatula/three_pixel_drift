@@ -1,0 +1,426 @@
+/* @group Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* @end */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('webfonts/lato-reg-webfont.eot');
+    src: url('webfonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/lato-reg-webfont.woff') format('woff'),
+         url('webfonts/lato-reg-webfont.ttf') format('truetype'),
+         url('webfonts/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cheddar Jack';
+    src: url('webfonts/cheddar_jack-webfont.eot');
+    src: url('webfonts/cheddar_jack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/cheddar_jack-webfont.woff') format('woff'),
+         url('webfonts/cheddar_jack-webfont.ttf') format('truetype'),
+         url('webfonts/cheddar_jack-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @group Reusable Content */
+
+.clearboth {
+	clear: both;
+}
+
+.amp {
+	font-family: "Cheddar Jack";
+	display: inline;
+	padding-bottom: 5px;
+	font-size: 32px;
+}
+
+#icon {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+#content {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.divider {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#blockphoto {
+	width: 700px;
+	margin-bottom: 20px;
+}
+
+/* @end Reusable Content*/
+
+/* @group Block Level Styling */
+
+body {
+	background-color: #dc554f;
+	color: #e5e5e5;
+	font-family: "Lato";
+	box-sizing: border-box;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+a {
+	color: #e0e0e0;
+	text-decoration: inherit;
+}
+
+a:hover {
+	border-bottom: 1px dashed #f2f2f2;
+}
+
+h1 {
+	font-size: 4em;
+	height: 64px;
+	width: 782px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -32px;
+	margin-left: -391px;
+	text-align: center;
+	font-family: "Lato";
+}
+
+h2 {
+	font-size: 23px;
+	text-transform: uppercase;
+	margin-bottom: -3px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: "Lato";
+}
+
+h3 {
+	font-size: 2.1em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+article {
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+h3:after {
+	content: ":";
+}
+
+q:before {
+	content: "“";
+}
+
+q:after {
+	content: "”";
+}
+
+.pagebottom {
+	height: 100px;
+	width: 700px;
+}
+
+/* @end Block Level Styling */
+
+/* @group Navigational Elements */
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 1.2em;
+	width: 353px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+nav li {
+	float: left;
+	margin-left: 20px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav a {
+	text-decoration: inherit;
+	color: inherit;
+	font-weight: inherit;
+}
+
+nav a:hover {
+	border-bottom: 3px solid #f2f2f2;
+}
+
+/* @end Navigational Elements */
+
+/* @group Lightbox */
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+	color: #000;
+}
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+	color: #000;
+}
+
+/* @end Lightbox */
+
+/* @group Contact Form */
+
+input, textarea {
+	width:250px;
+	height:40px;
+	background: #e05f59;
+	padding:10px;
+	margin-top:5px;
+	font-size:1em;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: Lato;
+	box-sizing: border-box;
+}
+
+	input:focus, textarea:focus {
+		border: 1px solid #802626;
+		outline: none;
+	}
+
+textarea {
+	height:100px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #e05f59;
+	border: 1px solid #a12e2e;
+}
+
+#submit {
+	width:127px;
+	height:38px;
+	text-indent:-9999px;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+#submit:hover {
+		opacity:0.9;
+}
+
+footer a img {
+	border:none;
+	float:right;
+	margin:0px 59px 40px 0px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+
+input[type=submit] {
+padding:5px 15px;
+background:#a12e2e;
+border:0 none;
+cursor:pointer;
+border-radius: 0px;
+}
+
+/* @end Contact Form */
+
+/* @group Contact Information */
+
+#contactform {
+	float: right;
+	width: 250px;
+}
+
+
+#contactinformation {
+	float: left;
+	width: 430px;
+	height: 285px;
+}
+
+#contactinformation ul {
+	margin-top: 23px;
+}
+#contactinformation li {
+	line-height: 30px;
+}
+
+#contactinformation li:nth-child(odd){
+	float: left;
+	width: 200px;
+}
+
+#contactinformation li:nth-child(even){
+	float: right;
+}
+
+
+#contactheader {
+	width: 700px;
+	height: 100px;
+}
+
+/* @end Contact Information */
+
+/* @group Portfolio */
+
+#tagline {
+	color: #f29692;
+	font-size: 0.7em;
+}
+
+.box {
+	width: 220px;
+	height: 220px;
+	background-color: #fff;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#portfolio {
+	margin-left: 10px;
+}
+
+#portfolio img{
+-webkit-filter: grayscale(100%);
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+-ms-transition-duration: 0.8s;
+}
+ 
+#portfolio img:hover{
+-webkit-filter: grayscale(0%);
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+-ms-transition-duration: 0.8s;
+z-index: 2px;
+}
+
+#projectdescription {
+	width: 525px;
+	float: left;
+	margin-right: 25px;
+}
+
+#servicesrendered {
+	/* Just a holder if I ever want to add anything */
+}
+
+
+#quote {
+	width: 150px;
+	float: right;
+	font-size: 24px;
+	text-align: left;
+	font-family: Baskerville;
+	line-height: 29px;
+}
+
+q:before {
+	content: "“";
+}
+
+q:after {
+	content: "”";
+}
+
+/* @end Portfolio*/
