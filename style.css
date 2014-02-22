@@ -129,6 +129,7 @@ body {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 p {
@@ -200,6 +201,11 @@ q:after {
 /* @end Block Level Styling */
 
 /* @group Navigational Elements */
+
+header {
+	background: #1f2125;
+}
+
 nav {
 	margin-left: auto;
 	margin-right: auto;
