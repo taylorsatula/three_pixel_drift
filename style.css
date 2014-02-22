@@ -133,6 +133,7 @@ body {
 
 p {
 	margin-bottom: 20px;
+	line-height: 1.3em;
 }
 
 a {
@@ -177,7 +178,6 @@ h3 {
 
 article {
 	text-align: justify;
-	line-height: 1.3em;
 }
 
 h3:after {
