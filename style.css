@@ -101,7 +101,6 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
-	overflow-x: hidden;
 }
 
 .divider {
@@ -109,9 +108,14 @@ table {
 	margin-right: 20px;
 }
 
+
 #blockphoto {
 	width: 700px;
 	margin-bottom: 20px;
+}
+
+.portfolio-header {
+	height: 141px;
 }
 
 .supermushroom {
@@ -130,6 +134,9 @@ body {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	overflow-x: hidden;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 p {
@@ -194,8 +201,8 @@ q:after {
 }
 
 .pagebottom {
-	height: 100px;
-	width: 700px;
+	height: 50px;
+	width: 1px;
 }
 
 /* @end Block Level Styling */
@@ -272,10 +279,12 @@ nav a:hover {
 
 /* @group Contact Form */
 
+
 input, textarea {
 	width:250px;
 	height:40px;
 	background: #3c3e41;
+	border: 0px solid #000;
 	padding:10px;
 	margin-top:5px;
 	font-size:1em;
@@ -299,13 +308,14 @@ textarea {
 	font-family:Arial, Helvetica, sans-serif;
 	background-color: #3c3e41;
 	border: 0px solid #a12e2e;
+	-webkit-appearance: none;
 }
 
 #submit {
 	width:127px;
 	height:38px;
 	text-indent:-9999px;
-	border:none;
+	border: 0px solid #000;
 	margin-top:20px;
 	cursor:pointer;
 }
@@ -339,6 +349,8 @@ background:#a12e2e;
 border:0 none;
 cursor:pointer;
 border-radius: 0px;
+-webkit-appearance: none;
+-webkit-border-radius: 0;
 }
 
 /* @end Contact Form */
@@ -357,19 +369,19 @@ border-radius: 0px;
 	height: 285px;
 }
 
-#contactinformation ul {
+#contactinformation table {
 	margin-top: 23px;
 }
-#contactinformation li {
+#contactinformation td {
 	line-height: 30px;
 }
 
-#contactinformation li:nth-child(odd){
+#contactinformation td:nth-child(odd){
 	float: left;
 	width: 200px;
 }
 
-#contactinformation li:nth-child(even){
+#contactinformation td:nth-child(even){
 	float: right;
 }
 
@@ -378,6 +390,9 @@ border-radius: 0px;
 	width: 700px;
 	height: 100px;
 }
+
+
+
 
 /* @end Contact Information */
 
@@ -407,9 +422,10 @@ border-radius: 0px;
 
 #portfolio {
 	margin-left: -10px;
+	width: 708px;
 }
 
-#portfolio img{
+#portfolio img {
 -webkit-filter: grayscale(100%);
 -webkit-transition-duration: 0.8s;
 -moz-transition-duration: 0.8s;
@@ -417,7 +433,7 @@ border-radius: 0px;
 -ms-transition-duration: 0.8s;
 }
  
-#portfolio img:hover{
+#portfolio img:hover {
 -webkit-filter: grayscale(0%);
 -webkit-transition-duration: 0.8s;
 -moz-transition-duration: 0.8s;
@@ -460,31 +476,147 @@ q:after {
 
 /* @end Portfolio*/
 
-@media screen and (max-width: 800px) {
-#content {
-	width: 90%;
+@media screen and (max-width: 768px) {
+
+	body {
+		width: 100%;
+	}
+	#content {
+		width: 90%;
+	}
+	
+	h1 {
+		font-size: 8vw;
+	}
+	
+	h2 {
+		width: 70%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	nav {
+		position: fixed;
+		top: -50px;
+		left: 0;
+		background: rgba(10,10,10, .9);
+		width: 100%;
+		height: 50px;
+		z-index: 999;
+		margin-bottom: 50px;
+	}
+	
+	nav ul {
+		margin-left: auto;
+		margin-right: auto;
+		width: 355px;
+		margin-top: 15px;
+	}
+	
+	#blockphoto {
+		width: 112%;
+		height: 100%;
+		margin-left: -5.5%;
+	}
+	
+	#projectdescription {
+		width: 100%;
+	}
+	
+	#contactinformation {
+		width: 60%;
+		height: 450px;
+	}
+	
+	#portfolio {
+		margin-bottom: 0;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	
+	.box {
+		width: 228px;
+		height: 228px;
+		background-color: #fff;
+		float: left;
+		margin-left: 8px;
+		margin-bottom: 8px;
+		padding: 13px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	
+	#portfolio img {
+	-webkit-filter: grayscale(0%);
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	}
+	 
+	#portfolio img:hover {
+	-webkit-filter: grayscale(0%);
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	z-index: 2px;
+	}
+	
 }
 
-h2 {
-	width: 70%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+@media screen and (max-width: 723px) {
+	#contactform {
+		float: left;
+		width: 100%;
+	}
+	
+	
+	#contactinformation {
+		float: left;
+		width: 99%;
+	}
+	
+	#contactinformation table {
+		margin-top: 23px;
+		width: 100%;
+	}
+	#contactinformation td {
+		line-height: 30px;
+	}
+	
+	#contactinformation td:nth-child(odd){
+		float: left;
+		width: 25%;
+	}
+	
+	#contactinformation td:nth-child(even){
+		float: right;
+		width: 200px;
+	}
+	
+	input, textarea {
+		width: 100%;
+	}
 }
 
-nav {
-	position: fixed;
-	top: -50px;
-	left: 0;
-	background: #313439;
-	width: 100%;
-	height: 50px;
-}
 
-nav ul {
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-	margin-top: 15px;
-}
+@media screen and (max-width: 320px) {		
+	nav {
+		font-size: 18px;
+		background: rgb(30,30,30);
+	}
+	
+	nav ul li {
+		margin: 3px;
+	}
+	
+	nav ul {
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		margin-top: 15px;
+	}
 }
