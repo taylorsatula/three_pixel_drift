@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-	<title>Taylor Satula × Web Designer &amp; Developer × Warren, NJ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>SECOND</title>
 	<meta name="description" content="Hi, My name is Taylor Satula. I am a web designer & developer from Warren, NJ. I specialize in beautiful and efficient design. I'm always available to chat." />
-	<link rel="stylesheet" href="../style.css" type="text/css" />
-	
+	<link rel="stylesheet" href="../styleTest.css" type="text/css" />
+	<script src="../javascript/modernizr.js"></script>
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -36,20 +37,31 @@
 	-->
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/portfolio">Folio</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
-	</nav>
-	
+<div id="outer-wrap">
+<div id="inner-wrap">
+	<header id="top" role="banner">
+	    <div class="block">
+	        <h1 class="block-title">Book Title</h1>
+	        <a class="nav-btn" id="nav-open-btn" href="#nav">Book Navigation</a>
+	    </div>
+	</header>
+		<nav id="nav" role="navigation">
+			<div class="block">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/portfolio">Folio</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+				<a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
+			</div>
+		</nav>
 	<div class="clearboth"></div>
 	
+	<div id="main" role="main">
 	<section id="content">
 		<article>
-			<img src="../images/me.jpg" alt="Me" id="blockphoto"/>
+			<img src="../images/me.jpg" alt="Me" width="700px" width="325px" id="blockphoto"/>
 				<h2>Web designer <span class="amp">&amp;</span> developer from Warren, New Jersey</h2>
 				
 			<div class="clearboth"><br></div>
@@ -65,9 +77,15 @@
 				<p>If you have an interesting idea for a website and want an interesting person to build it for you, I hope you’ll get in touch with me on the <a href="/contact">contact page</a> above. I can’t wait to see what we create together!</p>
 		</article>
 	</section>
+	</div>
 	
-	
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
+
 <!-- LIGHTBOX WITH SCHEMA DATA 02032014 -->
 
+<script src="../javascript/main.js"></script>
 </body>
 </html>
