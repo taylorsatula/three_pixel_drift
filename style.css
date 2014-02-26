@@ -134,18 +134,19 @@ a:hover                               { border-bottom: 1px dashed #f2f2f2 }
  IN THE CENTER OF THE PAGE IT BRINGS IT TO PERFECT VERTICAL AND HORIZONTAL
  ALIGNMENT. */
 h1                                    {
-                                          font-size: 4em;
-                                          height: 64px;
-                                          width: 785px;
+                                          font-size: 3em; /* 4em */
+                                          height: 96px; /* 64px */
+                                          width: 764px; /* 785px */
                                           position: absolute;
                                           top: 50%;
                                           left: 50%;
-                                          margin-top: -32px;
-                                          margin-left: -392px;
+                                          margin-top: -48px; /* -32px */
+                                          margin-left: -382px; /* -392px */
                                           text-align: center;
                                           font-family: "Lato";
                                           font-weight: 500;
                                       }
+
 
 /* H2 IS THE ACTUAL HEADERS. THIS IS THE ABOUT PAGE AND THE PROJECT PAGES
  AND ALL */
@@ -193,7 +194,7 @@ q                                     {   font-family: Baskerville }
 
 /* @group Navigational Elements */
 
-
+ 
 nav                                   {
                                           margin-left: auto;
                                           margin-right: auto;
@@ -201,7 +202,7 @@ nav                                   {
                                           color: #f2f2f2;
                                           text-align: center;
                                           font-size: 1.2em;
-                                          width: 354px;
+                                          width: 355px;
                                           letter-spacing: 1px;
                                           text-transform: uppercase;
                                       }
