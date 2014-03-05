@@ -47,6 +47,11 @@ IT WAS JUST A LANDING PAGE */
 
 ::-moz-selection                      {   background: #ff4545; } /* Firefox */
 
+mark								  {   background: #ff4545;
+										  color: inherit; 
+										  position: relative;
+										  z-index: -1;
+									  }
 /* CLEARBOTH IS JUST A REUSABLE ITEM CLEARER FOR WHEN I NEED TO UNSCREW A LAYOUT */
 .clearboth                            {   clear: both }
 
@@ -123,6 +128,8 @@ a                                     {
                                           color: #e0e0e0;
                                           text-decoration: inherit;
                                       }
+                                      
+
 /* YOU SHOULD CONFIRM IT THOUGH WHEN THEY HOVER OVER WITH SOMETHING
  MORE DIRECT AND CONCRETE */
 a:hover                               { border-bottom: 1px dashed #f2f2f2 }
