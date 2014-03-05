@@ -154,6 +154,9 @@ h1                                    {
                                           font-weight: 500;
                                       }
 
+.mobile-content						  {
+										  display: none;
+									  }
 
 /* H2 IS THE ACTUAL HEADERS. THIS IS THE ABOUT PAGE AND THE PROJECT PAGES
  AND ALL */
@@ -456,7 +459,18 @@ input[type=submit]                    {
 
 /* H1 NEEDS TO BE LARGE BUT STILL FIT ON THE PAGE
  FOUND NEW UNIT OF MEASUREMENT CALLED "VW" */
-	h1                  {   font-size: 8vw }
+	#hero-text          {   display: none;}
+	
+	.mobile-content {
+		margin-top: 75px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 35px;
+		display: block;
+	}
+	
+	h1                  {   font-size: 20px; width: 90%;}
 
 	h2                  {
 	                        width: 70%;
