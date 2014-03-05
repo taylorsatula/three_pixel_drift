@@ -281,24 +281,24 @@ nav a:hover                           {
 /* @group Portfolio */
 
 
-/* THIS PORTFOLIO BOX IS GHETTO. I KNOW. AT SOME POINT I'LL RIP IT OUT AND REPLACE
- IT WITH A GOOD ONE. ITS KIND OF HACKED TOGETHER FOR A FINAL PRODUCT */
 
-.box {
+.box 								  {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	width: 220px;
 	float: left;
 	padding: 10px;
 	background-color: #fff;
 	margin-right: 20px;
 	margin-bottom: 20px;
-}
+									  }
 
-.box:nth-child(3), .box:nth-child(6) {
+.box:nth-child(3), .box:nth-child(6)  {
 	margin-right: 0px;
 }
 
-.box img                        {
+.box img                       		  {
                                           -webkit-filter: grayscale(100%);
                                           -webkit-transition-duration: 0.8s;
                                           -moz-transition-duration: 0.8s;
@@ -306,7 +306,7 @@ nav a:hover                           {
                                           -ms-transition-duration: 0.8s;
                                       }
 
-.box img:hover                  {
+.box img:hover                 		  {
                                           -webkit-filter: grayscale(0%);
                                           -webkit-transition-duration: 0.8s;
                                           -moz-transition-duration: 0.8s;
@@ -461,14 +461,14 @@ input[type=submit]                    {
  FOUND NEW UNIT OF MEASUREMENT CALLED "VW" */
 	#hero-text          {   display: none;}
 	
-	.mobile-content {
-		margin-top: 75px;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 35px;
-		display: block;
-	}
+	.mobile-content 	{
+							margin-top: 75px;
+							width: 90%;
+							margin-left: auto;
+							margin-right: auto;
+							font-size: 35px;
+							display: block;
+						}
 	
 	h1                  {   font-size: 20px; width: 90%;}
 
