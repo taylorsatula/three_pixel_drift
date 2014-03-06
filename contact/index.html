@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-	<title>Taylor Satula × Web Designer &amp; Developer × Warren, NJ</title>
-	<meta name="description" content="Hi, My name is Taylor Satula. I am a web designer & developer from Warren, NJ. I specialize in beautiful and efficient design. I'm always available to chat." />
-	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<title>Taylor Satula × Send me a message!</title>
+	<meta name="description" content="Get in contact with Taylor Satula. I'll get back to you in 12-24 hours. Guaranteed. Let's chat." />
+	<link rel="stylesheet" href="/style.min.css" type="text/css" />
 	
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,10 +53,10 @@
 <body>
 	<nav>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/work">Work</a></li>
-			<li><a href="/contact">Contact</a></li>
+			<li><a href="/">        Home    </a> </li>
+			<li><a href="/about">   About   </a> </li>
+			<li><a href="/work">    Work    </a> </li>
+			<li><a href="/contact"> Contact </a> </li>
 		</ul>
 	</nav>
 	
@@ -64,7 +64,7 @@
 	
 	<section id="content">
 		<article>
-			<a href="https://www.google.com/maps/@40.6303755,-74.5129205,13z" style="border-bottom: 0px solid #333;"><img src="../images/maps.jpg" alt="Me" width="700px" width="325px" id="blockphoto"/></a>
+			<a href="https://www.google.com/maps/@40.6303755,-74.5129205,13z" style="border-bottom: 0px solid #333;"><img src="../images/maps.jpg" alt="Contact Me" width="700" height="325" id="blockphoto"/></a>
 				
 				<section id="contactinformation">
 						<h3>{01} Let's get <br>in touch</h3>
@@ -79,19 +79,19 @@
 								</tr>
 								<tr>
 									<td>Email</td>
-									<td><a href="mailto://taylor@threepixeldrift.com">taylor@threepixeldrift.com</a></td>
+									<td><a href="mailto:taylor@threepixeldrift.com" rel="nofollow">taylor@threepixeldrift.com</a></td>
 								</tr>
 								<tr>
 									<td>Twitter</td>
-									<td><a href="http://twitter.com/gotpurpledrank">@taylorsatula</a></td>
+									<td><a href="http://twitter.com/gotpurpledrank" rel="nofollow">@taylorsatula</a></td>
 								</tr>
 								<tr>
 									<td>Facebook</td>
-									<td><a href="https://www.facebook.com/taylor.satula">facebook.com/taylor.satula</a></td>
+									<td><a href="https://www.facebook.com/taylor.satula" rel="nofollow">facebook.com/taylor.satula</a></td>
 								</tr>
 								<tr>
 									<td>Skype</td>
-									<td><a href="skype:taylor.satula?chat">taylor.satula</a></td>
+									<td><a href="skype:taylor.satula?chat" rel="nofollow">taylor.satula</a></td>
 								</tr>
 							  </tbody>
 							</table>
@@ -99,11 +99,13 @@
 				
 					<section id="contactform">
 					<h3>{02} Send me <br>a message</h3>
-						<form class="form">	
-								<span class="name"><input type="text" name="name" id="name" placeholder="Name" /></span>
-								<span class="email"><input type="text" name="email" id="email" placeholder="Email" /></span>	
-								<span class="text"><textarea name="text" placeholder="Message" /></textarea></span>
-								<span class="submit"><input type="submit" value="Send" /></span>
+						<form class="form" method="post" action="sendform.php">	
+								<span class="name">    <input type="text" name="name" id="name" placeholder="NAME" />    </span>
+								<span class="email">   <input type="text" name="email" id="email" placeholder="EMAIL" /> </span>	
+								<span class="comments">    <textarea name="comments" placeholder="MESSAGE"></textarea>       </span>
+								<input type="hidden" name="loadtime" value="time();" />
+								<span class="submit">  <input type="submit" value="SEND" />								 </span>
+								
 							<div class="clearboth pagebottom"></div>
 						</form>
 					</section>
@@ -111,7 +113,17 @@
 	</section>
 	
 	
-<!-- LIGHTBOX WITH SCHEMA DATA 02032014 -->
+<img src="/images/favicon-grey.png" id="icon">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-2872960-5', 'threepixeldrift.com');
+	  ga('send', 'pageview');
+	
+	</script>
 
 </body>
 </html>

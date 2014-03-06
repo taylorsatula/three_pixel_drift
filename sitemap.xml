@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.threepixeldrift.com/</loc>
+  <lastmod>2014-03-06T05:12:42+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/about/</loc>
+  <lastmod>2014-03-06T05:12:41+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/</loc>
+  <lastmod>2014-03-06T05:17:09+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/contact/</loc>
+  <lastmod>2014-03-06T05:12:42+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/foodcircles/</loc>
+  <lastmod>2014-03-06T05:12:44+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/twoglassgents/</loc>
+  <lastmod>2014-03-06T05:12:48+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/frostbuilders/</loc>
+  <lastmod>2014-03-06T05:12:45+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/semiprofessionalsealion/</loc>
+  <lastmod>2014-03-06T05:12:47+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/naked-css/</loc>
+  <lastmod>2014-03-06T05:12:46+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.threepixeldrift.com/work/voliovino/</loc>
+  <lastmod>2014-03-06T05:12:48+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>

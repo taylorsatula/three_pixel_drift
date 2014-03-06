@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /contact/sendform.php
+Disallow: /tmp
+Disallow: /webfonts
+Disallow: /images
