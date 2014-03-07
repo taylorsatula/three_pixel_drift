@@ -135,12 +135,12 @@ a:hover                               { border-bottom: 1px dashed #f2f2f2 }
 h1                                    {
                                           font-size: 3em; /* 4em */
                                           height: 96px; /* 64px */
-                                          width: 766px; /* 785px */
+                                          width: 770px; /* 785px */
                                           position: absolute;
                                           top: 50%;
                                           left: 50%;
                                           margin-top: -48px; /* -32px */
-                                          margin-left: -383px; /* -392px */
+                                          margin-left: -385px; /* -392px */
                                           text-align: center;
                                           font-family: 'Lato', sans-serif;
                                           font-weight: 400;
@@ -204,7 +204,7 @@ nav                                   {
                                           color: #f2f2f2;
                                           text-align: center;
                                           font-size: 1.2em;
-                                          width: 355px;
+                                          width: 357px;
                                           letter-spacing: 1px;
                                           text-transform: uppercase;
                                       }

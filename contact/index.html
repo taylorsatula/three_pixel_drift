@@ -48,6 +48,7 @@
 		color: red;
 	}
 	
+	td .displaynotta { display:none; }
 	</style>
 </head>
 <body>
@@ -74,12 +75,27 @@
 							<table>
 							  <tbody>
 								<tr>
+								
+								<!-- 
+								
+									 Multiple methods for killing spam
+									 Nasty-ass code but whatever. Stupid
+									 Indian outsourcing companies. 
+									 
+									 http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
+									 
+								-->
+								
 									<td>Telephone</td>
-									<td><a href="tel://12317538152">+1 (231) 753-8152</a></td>
+									<td>
+									<script type="text/javascript">document.write("<n uers=\"gry://12317538152\">".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>
+									<a href="tel://12317538152">+1 (2<span class="displaynotta">bootysweat</span>31) 753-8<span class="displaynotta">bootysweat</span>152</a></td>
 								</tr>
 								<tr>
 									<td>Email</td>
-									<td><a href="mailto:taylor@threepixeldrift.com" rel="nofollow">taylor@threepixeldrift.com</a></td>
+									<td>
+									<script type="text/javascript">document.write("<n uers=\"znvygb:gnlybe@guerrcvkryqevsg.pbz\">".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>
+									taylor@<span class="displaynotta">bootysweat</span>threepixeldrift.com</a></td>
 								</tr>
 								<tr>
 									<td>Twitter</td>
@@ -90,8 +106,8 @@
 									<td><a href="https://www.facebook.com/taylor.satula" rel="nofollow">facebook.com/taylor.satula</a></td>
 								</tr>
 								<tr>
-									<td>Skype</td>
-									<td><a href="skype:taylor.satula?chat" rel="nofollow">taylor.satula</a></td>
+									<td>Github</td>
+									<td><a href="https://github.com/taylorsatula" rel="nofollow">taylorsatula</a></td>
 								</tr>
 							  </tbody>
 							</table>
